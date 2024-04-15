@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Page</title>
+</head>
+    <body>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{% static 'application.css' %}">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">JH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a href="/home" class="nav-link">home</a>
+                    <a href="/work" class="nav-link active">work</a>
+                    <a href="/about" class="nav-link">about</a>
+                    <a href="/contact" class="nav-link">contact</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+        
+        <div class="cards">
+
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">VulkanLibrary</h5>
+                <p class="card-text">A series of useful abstractions for Vulakn. Includes extra utilities, such as window management, and ImGui. </p>
+                <a href="https://github.com/JacobHensley/VulkanLibrary" class="stretched-link"></a>
+              </div>
+            </div>
+      
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">PathTracer</h5>
+                <p class="card-text">PathTracer is an in-development path tracer built for Nvidia GPUs using VulkanLibary. </p>
+                <a href="https://github.com/JacobHensley/PathTracer" class="stretched-link"></a>
+              </div>
+            </div>
+      
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Nyx</h5>
+                <p class="card-text">Nyx was my first game/rendering engine using Vulkan. It features an editor for place meshes and lighting, scene serialization, jump flood outlining, and full PBR. </p>
+                <a href="https://github.com/JacobHensley/Nyx" class="stretched-link"></a>
+              </div>
+            </div>
+      
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Gaia</h5>
+                <p class="card-text">Gaia was my first attempt at writing a game/rendering engine. It was writen in C++ and OpenGL. </p>
+                <a href="https://github.com/JacobHensley/Gaia" class="stretched-link"></a>
+              </div>
+            </div>
+      
+          </div>
+
+    </body>
+</html>
